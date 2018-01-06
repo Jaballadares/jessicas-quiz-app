@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #canvas {
+      border: 2px solid black;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .toolBar {
+      display: flex;
+      background: #ccc;
+      margin: 0;
+    }
+
+    .colorSwatch {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 1px solid black;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    /* .purple {
+      background: #cb3594;
+    }
+
+    .green {
+      background: #659b41;
+    }
+
+    .yellow {
+      background: #ffcf33;
+    }
+
+    .brown {
+      background: #986928;
+    } */
+
+    .sketchPadContainer {
+      width: fit-content;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <canvas id="canvas" width="490" height="220"></canvas> -->
+  <div class="sketchPadContainer">
+    <ul class="toolBar">
+      <li class="colorSwatch purple"></li>
+      <li class="colorSwatch green"></li>
+      <li class="colorSwatch yellow"></li>
+      <li class="colorSwatch brown"></li>
+      <li class="colorSwatch"></li>
+    </ul>
+    <div id="canvasDiv"></div>
+  </div>
+
+  <script src="js/jesscanvas.js"></script>
+</body>
+
+</html>
