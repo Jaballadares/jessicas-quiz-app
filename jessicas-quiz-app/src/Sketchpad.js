@@ -12,7 +12,7 @@ import './App.css';
 // };
 const Sketchpad = (props) => (
   <div>
-    <div>Hello {props.name} you have no idea what you're in for.</div>
+    <div>Hello {props.name} ... I sure hope you studied.</div>
   </div>
 );
 
