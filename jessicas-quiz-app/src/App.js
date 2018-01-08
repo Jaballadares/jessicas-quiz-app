@@ -10,14 +10,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Ms. Yee's Classroom</h1>
+          <h1 className="App-title">Welcome to Ms. Yee's Math Class</h1>
+          <p>Use the box below to draw. This is especially useful for word problems.</p>
           <Sketchpad name="student" />
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, find your quiz and get started. If you're in dev mode,edit <code>src/App.js</code> and save.
         </p>
         <DrawArea />
-        <div id="canvasDiv" />
+
       </div>
     );
   }
