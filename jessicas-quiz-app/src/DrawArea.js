@@ -96,8 +96,10 @@ function DrawingLine({ line }) {
       .join(" L ");
 
   return <path className="path" d={pathData} />;
+}
 
-
+// ReactDOM.render(<DrawArea />, document.getElementById("container"));
+export default DrawArea;
   // Assuming we have a "clear" button with ID of clearboard. This will work. I've already tested
 
   //   clearboard.addEventListener('click', function() {
@@ -117,4 +119,3 @@ function DrawingLine({ line }) {
   // }
 
   // ReactDOM.render(<DrawArea />, document.getElementById("container"));
-  export default DrawArea;
