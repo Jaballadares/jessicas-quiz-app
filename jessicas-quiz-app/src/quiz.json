@@ -1,0 +1,12 @@
+[
+{
+  "question": "Which NBA team won the 2017 Championshp?",
+    "options": [
+                "New York Knicks",
+                "Los Angeles Lakers",
+                "Golden State Warriors",
+                  "Huston Rocket"
+                ],
+                "answer": "Golden State Warriors"
+            }
+]
