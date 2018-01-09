@@ -8,5 +8,25 @@
                   "Huston Rocket"
                 ],
                 "answer": "Golden State Warriors"
-            }
+            },
+{
+    "question": "What is 2 + 2?",
+              "options": [
+                          "5",
+                          "10",
+                          "1",
+                          "4"
+                          ],
+                          "answer": "4"
+                        },
+{
+  "question": "What is the capital of California",
+    "options": [
+                "Sacramento",
+                "Albany",
+                "Providence",
+                "Hartford"
+                ],
+                "answer": "Sacramento"
+}
 ]
