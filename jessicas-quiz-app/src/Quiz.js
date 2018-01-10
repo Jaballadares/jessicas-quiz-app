@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Answers from './Answers'
 import quiz from './quiz.json';
+import './Quiz.css';
 
 class Quiz extends Component {
   constructor(props){
@@ -8,9 +9,11 @@ class Quiz extends Component {
 
     this.state ={
       quiz: quiz,
-      currentPosition: 0
+      currentPosition: 0,
+      selectedAnswers:{}
     };
-    this.nextQuestion = this.nextQuestion.bind(this)
+    this.nextQuestion = this.nextQuestion.bind(this);
+    this.setAnswer = this.setAnswer.bind(this);
   }
 
   nextQuestion() {
@@ -21,12 +24,18 @@ class Quiz extends Component {
   }
 };
 
+setAnswer(pickedAnswer) {
+  const selectedAnswers = {...this.selectedAnswers};
+  selectedAnswers[`${this.state.quiz[this.state.currentPosition].question}`] = pickedAnswer;
+
+  this.setState({selectedAnswers})
+}
+
   render(){
-    console.log(quiz)
     return(
-      <div className="quiz">
-        <h2>Question: {this.state.quiz[this.state.currentPosition].question}</h2>
-        <Answers options={this.state.quiz[this.state.currentPosition].options} answer={this.state.quiz[this.state.currentPosition].answer}/>
+      <div className="grid">
+        <h1>Question: {this.state.quiz[this.state.currentPosition].question}</h1>
+        <Answers options={this.state.quiz[this.state.currentPosition].options} answer={this.state.quiz[this.state.currentPosition].answer} setAnswer={this.setAnswer}/>
 
         <button onClick={this.nextQuestion}>Click to Answer</button>
 
